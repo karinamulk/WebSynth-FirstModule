@@ -389,22 +389,22 @@ export default class Container extends Component {
             handleClick={this.handleStart}
           />
           <div className="lights">
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
+            <div id="light1"></div>
+            <div id="light2"></div>
+            <div id="light3"></div>
+            <div id="light4"></div>
+            <div id="light5"></div>
+            <div id="light6"></div>
+            <div id="light7"></div>
+            <div id="light8"></div>
+            <div id="light9"></div>
+            <div id="light10"></div>
+            <div id="light11"></div>
+            <div id="light12"></div>
+            <div id="light13"></div>
+            <div id="light14"></div>
+            <div id="light15"></div>
+            <div id="light16"></div>
           </div>
 
         </div>

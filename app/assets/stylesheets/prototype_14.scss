@@ -88,6 +88,21 @@
               font-size: 16px;
               line-height: 19px;
               margin-top: 24px;
+              transition: all .4s ease;
+
+
+              &:hover:not(.active) {
+                background-color: #F2F2F2;
+                transition: all .2s ease;
+              }
+              &.active {
+                background-color: #FAFD67;
+                cursor: pointer;
+                &:hover{
+                  background-color: #EDF062;
+                  transition: all .2s ease;
+                }
+              }
             }
             .SC_Knob {
               width: 164px;
@@ -130,10 +145,13 @@
                   border: #172128 8px solid;
                   border-radius: 60px;
                   z-index: 1;
+                  transition: all .4s ease;
+
 
                   &:hover {
-                    filter: brightness(90%);
+                    background-color: #F2F2F2;
                     cursor: pointer;
+                    transition: all .2s ease;
                   }
 
                   &::before {
@@ -259,6 +277,8 @@
                 background: #172128;
                 margin-top: -6px;
                 cursor: pointer;
+                transition: all .4s ease;
+
               }
 
               &:focus {
@@ -297,9 +317,13 @@
             border-radius: 10px;
             cursor: pointer;
             display: inline-block;
+            transition: all .4s ease;
+
 
             &:hover:not(.active) {
               background-color: #F2F2F2;
+              transition: all .2s ease;
+
             }
 
             &.active {
@@ -445,6 +469,7 @@
     .bassblock .Distortion .SC_Slider:last-child {margin-bottom: 254px !important;}
     .bassblock .ToneSynth .SC_Slider:last-child {margin-bottom: 0px !important;}
 
+    
 
     }
 
