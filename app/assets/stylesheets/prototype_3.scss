@@ -1,0 +1,121 @@
+.prototype_body_3 {
+  background: var(--medium-grey);
+}
+
+#prototype_3 {
+  // display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  // margin: auto;
+  .framebox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .frame {
+    width: 11.11%;
+    background: #176070;
+  }
+  .man {
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8.4%;
+    overflow: hidden;
+  }
+  .manbody {
+    width: 100%;
+    height: 1200px;
+    background: #F9B463;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+  }
+  .ear {
+    background: green;
+    position: absolute;
+    // width: 50px; height: 100px;
+    left: 0px;
+   }
+   .ear2 {
+     left: 550px;
+   }
+   .ear::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    border: 250px solid transparent;
+    border-left: 400px solid #F9B463;
+    transform: rotate(-90deg);
+   }
+  .eye {
+    background: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: auto;
+    bottom: 32%;
+    left: 30%;
+  }
+  .eye2 {
+    left: auto;
+    right: 30%;
+  }
+  .mouth {
+    width: 370px;
+    height: 140px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: auto;
+    bottom: 7%;
+    left: 35%;
+    overflow: hidden;
+  }
+  .teeth {
+    width: 70px;
+    height: 93px;
+    background: white;
+    position: absolute;
+    left: 30%;
+  }
+  .teeth2 {
+    left: auto;
+    right: 30%;
+  }
+  p {
+    font-family: Pragmatica;
+    font-size: 48px;
+    line-height: 50px;
+    color: white;
+    width: 67%;
+    margin: 20px auto;
+
+  }
+}
+.framebox .frame:nth-of-type(2) {
+  background: #0D8FAB !important;
+}
+.framebox .frame:nth-of-type(3) {
+  background: #007499 !important;
+}
+
+.framebox .frame:nth-of-type(5) {
+  background: #007D99 !important;
+}
+.framebox .frame:nth-of-type(6) {
+  background: #0F9AB9 !important;
+}
+.framebox .frame:nth-of-type(7) {
+  background: #007499 !important;
+}
+.framebox .frame:nth-of-type(8) {
+  background: #0D8FAB !important;
+}
+.framebox .frame:nth-of-type(9) {
+  background: #007D99 !important;
+}
