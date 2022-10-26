@@ -158,6 +158,14 @@ export default class Container extends Component {
     drumsPart2.loop = true
 
     Tone.Transport.start()
+
+    var className = "visible";
+    var className2 = "nonvisible";
+    document.getElementsByClassName("bassblock")[0].classList.add(className);
+    document.getElementsByClassName("melodyblock")[0].classList.add(className);
+    document.getElementsByClassName("drumsblock")[0].classList.add(className);
+    document.getElementsByClassName("first")[0].classList.add(className);
+    document.getElementsByClassName("welcome")[0].classList.add(className2);
   }
 
   handleBassValueChange = (property, value) => {
@@ -382,57 +390,21 @@ export default class Container extends Component {
 
     return (
       <div className="Container">
-
-        <div className="first">
+        <div className="welcome">
           <SC_Button
-            text="FM Start"
+            text="Click me to start Road Trip"
             handleClick={this.handleStart}
           />
-          <div className="lights">
-            <div id="light1"></div>
-            <div id="light2"></div>
-            <div id="light3"></div>
-            <div id="light4"></div>
-            <div id="light5"></div>
-            <div id="light6"></div>
-            <div id="light7"></div>
-            <div id="light8"></div>
-            <div id="light9"></div>
-            <div id="light10"></div>
-            <div id="light11"></div>
-            <div id="light12"></div>
-            <div id="light13"></div>
-            <div id="light14"></div>
-            <div id="light15"></div>
-            <div id="light16"></div>
-          </div>
-
         </div>
 
-        <div className="block drumsblock">
-          <div className="blocktitle">
-            <h1>Samplers</h1>
+        <div className="first">
+          <div className="firstblack">
+            <h2>Remember the pop music radio your parents listened to on road trips</h2>
+            <h1>Road Trip Synthesizer</h1>
           </div>
-          <div className="column">
-            <div className="heading">
-              <h2>Channel</h2>
-            </div>
-            <ChannelForSamplers
-              settings={drumsSettings}
-              handleValueChange={this.handleDrumsValueChange}
-            />
-          </div>
-          <div className="column">
-            <div className="heading">
-              <h2>Channel</h2>
-            </div>
-            <ChannelForSamplers
-              settings={drumsSettings2}
-              handleValueChange={this.handleDrums2ValueChange}
-            />
-          </div>
-
         </div>
+
+
 
         <div className="block melodyblock">
           <div className="blocktitle">
@@ -465,6 +437,31 @@ export default class Container extends Component {
               handleValueChange={this.handleMelodyValueChange}
             />
           </div>
+        </div>
+
+        <div className="block drumsblock">
+          <div className="blocktitle">
+            <h1>Samplers</h1>
+          </div>
+          <div className="column">
+            <div className="heading">
+              <h2>Channel</h2>
+            </div>
+            <ChannelForSamplers
+              settings={drumsSettings}
+              handleValueChange={this.handleDrumsValueChange}
+            />
+          </div>
+          <div className="column">
+            <div className="heading">
+              <h2>Channel</h2>
+            </div>
+            <ChannelForSamplers
+              settings={drumsSettings2}
+              handleValueChange={this.handleDrums2ValueChange}
+            />
+          </div>
+
         </div>
 
         <div className="block bassblock">
